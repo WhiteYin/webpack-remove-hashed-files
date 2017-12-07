@@ -1,0 +1,23 @@
+{
+  "name": "webpack-remove-hashed-files",
+  "version": "1.0.0",
+  "description": "a plugin that can remove hashed files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhiteYin/webpack-remove-hashed-files.git"
+  },
+  "keywords": [
+    "javascript",
+    "node.js"
+  ],
+  "author": "whiteyin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhiteYin/webpack-remove-hashed-files/issues"
+  },
+  "homepage": "https://github.com/WhiteYin/webpack-remove-hashed-files#readme"
+}
