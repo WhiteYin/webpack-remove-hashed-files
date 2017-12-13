@@ -1,6 +1,6 @@
 {
   "name": "webpack-remove-hashed-files",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "a plugin that can remove hashed files",
   "main": "index.js",
   "scripts": {
