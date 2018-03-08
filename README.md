@@ -1,6 +1,7 @@
 ### This plugin is able to remove hashed files.  
-### 这个插件可以删除过往webpack打包hash编码后的文件。
 ### If you meet any problems,publish an issue plz.
+
+### 这个插件可以删除过往webpack打包hash编码后的文件。
 ### 如果你在使用过程中，遇到了什么问题，欢迎提交issue给我。
 
 ### 使用方法
@@ -19,7 +20,7 @@ const removeFiles = require('webpack-remove-hashed-files');
 const buildDir = './dist/';
 //自定义选项 - DIY options
 const options = {
-    exclude:["test.js","foo/bar.js"]
+    exclude:["test.js","foo/bar.js","WEB-INF","test/www"]
 }
 //修改plugins - modify plugins
 plugins:[
@@ -34,5 +35,4 @@ plugins:[
 能够递归目录，判断内部子文件是否应该被删除。
 
 ### 2018-3-8 新增功能
-新增options参数，可以配置exclude数组用来设置白名单。exclude每项必须为准确的文件路径名，暂不支持正则。  
-*文件夹不需要设置白名单，若要删除请手动。*
+新增options参数，可以配置exclude数组用来设置白名单。exclude每项最好为准确的文件或文件夹的相对路径名，暂不支持正则。  
