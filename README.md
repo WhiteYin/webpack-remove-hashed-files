@@ -21,3 +21,6 @@ plugins:[
     new removeFiles(buildDir)
 ]
 ```
+
+# 2018-3-7 修复bug
+加上文件夹判断。当目标文件夹中含有子文件夹，将跳过该文件夹。
