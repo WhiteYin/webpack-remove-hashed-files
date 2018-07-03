@@ -4,6 +4,9 @@
 ### 这个插件可以删除过往webpack打包hash编码后的文件。
 ### 如果你在使用过程中，遇到了什么问题，欢迎提交issue给我。
 
+[![npm package](https://img.shields.io/npm/v/webpack-remove-hashed-files.svg?style=flat-square)](https://www.npmjs.org/package/webpack-remove-hashed-files)
+[![NPM downloads](http://img.shields.io/npm/dt/webpack-remove-hashed-files.svg?style=flat-square)](https://npmjs.org/package/webpack-remove-hashed-files) 
+
 ### 使用方法
 1. 初始化npm
 ```
@@ -36,3 +39,6 @@ plugins:[
 
 ### 2018-3-8 新增功能
 新增options参数，可以配置exclude数组用来设置白名单。exclude每项最好为准确的文件或文件夹的相对路径名，暂不支持正则。  
+
+### 2018-7-3 修复bug && 新增功能
+修改原有逻辑，现在是根据遍历传入的路径中每个文件的绝对路径是否存在于assets资源图中来判断该文件是否应该删除。同时新增删除文件夹中所有文件后会删除该空文件夹的功能。
